@@ -1,0 +1,12 @@
+<%- contentFor('body') %>
+
+<h1 class="mb-4">
+    <%=produto.nome%>
+</h1>
+<p class="lead">Disponível em <a href="#"><%=produto.nome%></a></p>
+<hr>
+<p class="text-muted">Disponível desde <%=produto.produtoadoEm%></p>
+<hr>
+<img class="img-fluid rounded mb-4" src="<%=produto.foto%>" alt="Imagem do produto">
+
+<%-produto.descricao%>

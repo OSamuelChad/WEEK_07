@@ -1,0 +1,31 @@
+{
+  "name": "aula04-05",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon --exec node index.js",
+    "production": "cross-env NODE_ENV=production node index.js",
+    "migrate-dev": "cross-env NODE_ENV=development npx sequelize-cli db:migrate",
+    "migrate-prod": "cross-env NODE_ENV=production npx sequelize-cli db:migrate"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {
+    "ajv": "^8.3.0",
+    "ejs": "^3.1.10",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.1",
+    "moment": "^2.30.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.6.2",
+    "sqlite3": "^5.0.2",
+    "uuid": "^8.3.2"
+  }
+}

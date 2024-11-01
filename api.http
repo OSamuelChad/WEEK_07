@@ -1,0 +1,45 @@
+###
+
+GET http://localhost:8080/
+
+###
+
+GET http://localhost:8080/api/produto/1
+
+###
+
+GET http://localhost:8080/produto/8
+
+###
+
+POST http://localhost:8080/api/produto
+Content-Type: application/json
+
+{
+    {
+    "nome": "Garrafa",
+    "descricao": "Uma boa garrafa",
+    "preco": 100,
+    "tags": ["foo1", "ba1"]
+}
+
+   
+}
+
+###
+
+PUT http://localhost:8080/api/produto/1
+Content-Type: application/json
+
+{
+    "nome": "Novo nome",
+    "descricao": "Nova desc",
+    "preco": 100,
+    "tags": ["foo1", "ba1"],
+   
+}
+
+###
+
+DELETE http://localhost:8080/produto/aa7b7696-7afc-4b04-b806-eb1f515bce73
+
